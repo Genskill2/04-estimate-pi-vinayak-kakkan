@@ -6,11 +6,12 @@
 #srandom srand 
 
 float mc_pi(int);
-float frandom() {
+float frandom() 
+{
   long int q = random();
   float ret = (float)q/(float)RAND_MAX;
   return ret;
-}
+ }
 
 int main(void) {
   float pi0;
@@ -38,9 +39,9 @@ int main(void) {
       abort();
     }
   }
-}
+ }
 float mc_pi(int a)
-{
+ {
   int s1 =0;
   float pi;
     for (int i=0; i<a; ++i) 
@@ -55,13 +56,13 @@ float mc_pi(int a)
    }
    pi= (double) (s1*4)/a;
    return pi;
-}
+ }
 
 float frandom() {
   long int q = random();
   float ret = (float)q/(float)RAND_MAX;
   return ret;
-}
+ }
 
 int main(void) {
   float pi0;
