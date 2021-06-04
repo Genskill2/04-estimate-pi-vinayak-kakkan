@@ -3,10 +3,13 @@
 #include <stdio.h>
 #include <math.h>
 
-float mc_pi(int a){
+float mc_pi;
+float mc_pi(int a)
+{
   int s1 =0;
   float pi;
-    for (int i=0; i<a; ++i) {
+    for (int i=0; i<a; ++i) 
+    {
        float x=frandom();
        float y=frandom();
        float d=x*x + y*y;
